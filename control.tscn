@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bg3u22anumerm"]
+
+[ext_resource type="Script" uid="uid://dkkd78ouxso2t" path="res://control.gd" id="1_0fbet"]
+
+[node name="Control" type="Control" unique_id=296701227]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_0fbet")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=873752967]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.785002
+anchor_bottom = 16.176
+offset_left = 399.0
+offset_right = -381.40002
+offset_bottom = -0.040039063
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=447795969]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+accessibility_name = "One"
+accessibility_description = "The first number"
+text = "One"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1591391740]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+accessibility_name = "Two"
+accessibility_description = "The second number"
+text = "Two"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=186154070]
+layout_mode = 2
+size_flags_horizontal = 5
+size_flags_vertical = 3
+accessibility_name = "Three"
+accessibility_description = "The third number"
+text = "Three	"
