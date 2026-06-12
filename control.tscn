@@ -20,10 +20,11 @@ offset_bottom = -0.040039063
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Button" type="Button" parent="VBoxContainer" unique_id=447795969]
+[node name="Button1" type="Button" parent="VBoxContainer" unique_id=447795969]
 layout_mode = 2
 size_flags_horizontal = 5
 size_flags_vertical = 3
+focus_next = NodePath("../Button3")
 accessibility_name = "One"
 accessibility_description = "The first number"
 text = "One"
@@ -43,3 +44,7 @@ size_flags_vertical = 3
 accessibility_name = "Three"
 accessibility_description = "The third number"
 text = "Three	"
+
+[connection signal="button_down" from="VBoxContainer/Button1" to="." method="_on_button_1_button_down"]
+[connection signal="button_down" from="VBoxContainer/Button2" to="." method="_on_button_2_button_down"]
+[connection signal="button_down" from="VBoxContainer/Button3" to="." method="_on_button_3_button_down"]
