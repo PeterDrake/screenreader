@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bgmwg2qqlngp5"]
 
 [ext_resource type="Script" uid="uid://87rxr22o3y1a" path="res://button.gd" id="1_r04n3"]
+[ext_resource type="AudioStream" uid="uid://cxn4rpu274ded" path="res://Invalid.wav" id="2_n4tde"]
 
 [node name="Button" type="Button" unique_id=707538377]
 size_flags_horizontal = 5
@@ -10,4 +11,10 @@ accessibility_description = "The first number"
 text = "One"
 script = ExtResource("1_r04n3")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=2090299112]
+stream = ExtResource("2_n4tde")
+volume_db = 20.0
+playback_type = 1
+
 [connection signal="button_down" from="." to="." method="_on_button_down"]
+[connection signal="pressed" from="." to="." method="_on_pressed"]
