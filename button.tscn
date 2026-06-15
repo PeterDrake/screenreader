@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://bgmwg2qqlngp5"]
+
+[ext_resource type="Script" uid="uid://87rxr22o3y1a" path="res://button.gd" id="1_r04n3"]
+
+[node name="Button" type="Button" unique_id=707538377]
+size_flags_horizontal = 5
+size_flags_vertical = 3
+accessibility_name = "One"
+accessibility_description = "The first number"
+text = "One"
+script = ExtResource("1_r04n3")
+
+[connection signal="button_down" from="." to="." method="_on_button_down"]
