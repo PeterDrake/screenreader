@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://dkkd78ouxso2t" path="res://control.gd" id="1_0fbet"]
 [ext_resource type="PackedScene" uid="uid://bgmwg2qqlngp5" path="res://button.tscn" id="2_62e2m"]
-[ext_resource type="Script" uid="uid://ufxpdhv7ghlo" path="res://v_box_container.gd" id="2_qtu10"]
 
 [node name="Control" type="Control" unique_id=296701227]
 layout_mode = 3
@@ -22,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 2
 accessibility_name = "Group A"
-script = ExtResource("2_qtu10")
+accessibility_region = true
 
 [node name="Button" parent="VBoxContainer" unique_id=707538377 instance=ExtResource("2_62e2m")]
 layout_mode = 2
@@ -51,6 +50,7 @@ grow_horizontal = 2
 grow_vertical = 2
 focus_mode = 2
 accessibility_name = "Group B"
+accessibility_region = true
 
 [node name="Button" parent="VBoxContainer2" unique_id=1164354947 instance=ExtResource("2_62e2m")]
 layout_mode = 2
